@@ -138,10 +138,10 @@ drip bots). A signature is the only per-tx unique identifier.
 
 ```
 src/
-  main.rs     CLI, cold-start timing, JSON output
-  rpc.rs      Helius HTTP/2 client + TxResult decode (incl ALT fallback)
-  scout.rs    The algorithm
-  types.rs    BalancePoint
+  main.rs       CLI, cold-start timing, JSON output
+  rpc.rs        Helius HTTP/2 client + TxResult decode (incl ALT fallback)
+  algorithm.rs  The algorithm
+  types.rs      BalancePoint
 ```
 
 No database, no cache, no indexing, no persistence between calls.

@@ -1,5 +1,5 @@
+mod algorithm;
 mod rpc;
-mod scout;
 mod types;
 
 use anyhow::Result;
@@ -58,7 +58,7 @@ async fn main() -> Result<()> {
     let start = Instant::now();
     let (_, balances) = tokio::try_join!(
         client.warm(),
-        scout::compute(&client, &args.address),
+        algorithm::compute(&client, &args.address),
     )?;
     let latency_ms = start.elapsed().as_secs_f64() * 1000.0;
 
