@@ -2,7 +2,7 @@
 
 Lowest-latency algorithm for computing a Solana wallet's SOL balance
 timeline using only Helius RPC, for Mert's Solana dev weekend
-competition. Rust, ~700 lines across 4 source files.
+competition. Implementation in Rust.
 
 ## Quick start
 
