@@ -144,5 +144,4 @@ src/
   types.rs      BalancePoint
 ```
 
-No database, no cache, no indexing, no persistence between calls.
-Every run is cold.
+There is no DB, caching, indexing, or persistence between calls. 
